@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg: #D5E1EF;
+    --text-primary: #1F314F;
+    --text-secondary: #7D889E;
+    --qr-code: #ffffff;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-bg);
+}
+
+#qr-code {
+    max-width: 21.3rem;
+    max-height: 33.13rem;
+    background-color: var(--qr-code);
+    border-radius: 1rem;
+}
+
+#image-content {
+    height: 60%;
+}
+
+#image-content img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.description-content {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.description-content h1 {
+    font-size: 1.46rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.description-content p {
+    color: var(--text-secondary);
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Galaxy Fold device width or smaller */
+
+@media (max-width: 280px) {
+    #qr-code {
+        max-width: 16rem;
+    }
+
+    .description-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .description-content p {
+        font-size: .8rem;
+    }
+}
